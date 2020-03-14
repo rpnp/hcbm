@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hcbm-admin/hcbm-admin.iml" filepath="$PROJECT_DIR$/hcbm-admin/hcbm-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hcbm-gateway/hcbm-gateway.iml" filepath="$PROJECT_DIR$/hcbm-gateway/hcbm-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hcbm-iam/hcbm-iam.iml" filepath="$PROJECT_DIR$/hcbm-iam/hcbm-iam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hcbm-oauth/hcbm-oauth.iml" filepath="$PROJECT_DIR$/hcbm-oauth/hcbm-oauth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hcbm-parent/hcbm-parent.iml" filepath="$PROJECT_DIR$/hcbm-parent/hcbm-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hcbm-platform/hcbm-platform.iml" filepath="$PROJECT_DIR$/hcbm-platform/hcbm-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hcbm-register/hcbm-register.iml" filepath="$PROJECT_DIR$/hcbm-register/hcbm-register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hcbm-swagger/hcbm-swagger.iml" filepath="$PROJECT_DIR$/hcbm-swagger/hcbm-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/repo_h0.iml" filepath="$PROJECT_DIR$/.idea/repo_h0.iml" />
+    </modules>
+  </component>
+</project>

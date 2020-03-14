@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hcbm-admin" />
+        <module name="hcbm-gateway" />
+        <module name="hcbm-iam" />
+        <module name="hcbm-oauth" />
+        <module name="hcbm-platform" />
+        <module name="hcbm-register" />
+        <module name="hcbm-swagger" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hcbm-admin" target="1.8" />
+      <module name="hcbm-gateway" target="1.8" />
+      <module name="hcbm-iam" target="1.8" />
+      <module name="hcbm-oauth" target="1.8" />
+      <module name="hcbm-parent" target="1.8" />
+      <module name="hcbm-platform" target="1.8" />
+      <module name="hcbm-register" target="1.8" />
+      <module name="hcbm-swagger" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
