@@ -1,0 +1,97 @@
+{
+  "name": "hcbm-front",
+  "version": "1.2.0",
+  "private": true,
+  "description": "HCBM_FRONT",
+  "publishConfig": {
+    "registry": "http://nexus.saas.hand-china.com/content/repositories/hzero-ui/"
+  },
+  "keywords": [
+    "HZERO",
+    "hzero-front"
+  ],
+  "author": "Hzero Front Team",
+  "scripts": {
+    "prettier": "prettier --write ./src/**/**/**/*",
+    "codeScan": "hzero codeScan",
+    "transpile": "cross-env NODE_ENV=production BABEL_ENV=production npx babel src --delete-dir-on-start --extensions .js,.jsx,.ts,.tsx --out-dir lib --copy-files --ignore \"src/**/*.spec.js\",\"src/**/*.test.js\"",
+    "start": "node --max_old_space_size=8196 ../../scripts/start.js",
+    "build": "npm run lint:fix && cross-env node --max_old_space_size=5120 ../../scripts/build.js",
+    "build:analyze": "npm run lint:fix && cross-env ANALYZE=true node --max_old_space_size=5120 ../../scripts/build.js",
+    "test": "node scripts/test.js",
+    "lint": "eslint --ext .js src && npm run lint:style",
+    "lint:fix": "eslint --quiet --fix --ext .js src && npm run lint:style",
+    "lint:style": "stylelint \"src/**/*.less\" --syntax less"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "resolutions": {
+    "conventional-changelog": "~3.0.6",
+    "browserslist": "4.6.0",
+    "caniuse-lite": "1.0.30000971"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 10",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "resolver": "jest-pnp-resolver",
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web",
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ],
+    "watchPlugins": [
+      "<rootDir>/node_modules/jest-watch-typeahead/filename.js",
+      "<rootDir>/node_modules/jest-watch-typeahead/testname.js"
+    ]
+  },
+  "files": [
+    "lib",
+    "config/routers.js",
+    "public",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md"
+  ]
+}
